@@ -79,14 +79,3 @@ while True:
                 break
         except:
             print(f"snälla använd nummer mellan 1 0ch {totalcars} ifall du vill ändra någon bil eller 0 ifall du inte vill ändra något")
-
-    os.system("cls")
-    
-    
-
-
-
-
-
-
-
