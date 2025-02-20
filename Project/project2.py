@@ -16,16 +16,16 @@ def add(x): # Definierar funktionen add
 
 def change():
     try:
-        index = int(input(f"Vilken vill du ändra? Börjar från 0: ")) # välj vilket index du vill ändra
+        index = int(input(f"Vilken vill du ändra? Börjar från 1 - {len(cars)}: ")) # välj vilket index du vill ändra
         newcar = input("Vad vill du ändra det till? ") # ger newcar ett nytt värde
-        cars[index] = newcar  # Uppdaterar listan med det nya bilmärket
+        cars[index - 1] = newcar  # Uppdaterar listan med det nya bilmärket
     except: 
         print("Skriv med siffror när du väljer position, och med bokstäver när du byter namn") #medelandet den ger när du skrivit fel
 
 def remove(): # Definierar funktionen remove
     try:
-        index = int(input("Vilken vill du ta bort? Börjar från 0: ")) # välj vilket index du vill ta bort
-        cars.pop(index) # tar bort bilmärket på indexen du valt
+        index = int(input(f"Vilken vill du ta bort? Börjar från 1 - {len(cars)}: ")) # välj vilket index du vill ta bort
+        cars.pop(index - 1) # tar bort bilmärket på indexen du valt
     except:
         print("Svara med siffror") # medelandet den ger när du skrivit fel
 
