@@ -6,6 +6,8 @@ __version__ = "1.0.0"
 __email__   = "Alexander.pinter@elev.ga.ntig.se"
 '''
 
+import time
+
 
 import os 
 
@@ -42,6 +44,7 @@ while True: #öppnar huvudlopen
             i += 1 #så att den ökar nummret med 1 för varje värde i listan
     else:
         print("Listan är tom.") # skriver att listan är tom om det inte fimms ett värde i den
+    time.sleep(2) #Sleep, pausar så att man kan se listan innan man väljer
 
     print("\n""1. Lägg till en bil")      #den skriver ut olika valen man har
     print("2. Ändra en existerande bil")   #den skriver ut olika valen man har
