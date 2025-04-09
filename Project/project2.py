@@ -7,7 +7,7 @@ __email__   = "Alexander.pinter@elev.ga.ntig.se"
 '''
 
 import time
-
+import datetime
 
 import os 
 
@@ -33,6 +33,12 @@ def remove(): # Definierar funktionen remove
 
 while True: #öppnar huvudlopen
     os.system("cls")  # rensar skärmnen varje gån loopen loopar
+    
+    while True:
+        os.system("cls")  
+        x = datetime.datetime.now()
+        print(x)
+        break
     print("-" * 40)
     print("-" * 9, "BÄSTA BILMÄRKERNA", "-" * 12) #titl
     print("-" * 40, "\n")
